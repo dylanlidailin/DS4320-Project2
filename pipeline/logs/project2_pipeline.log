@@ -1,0 +1,38 @@
+2026-04-11 17:25:11,576  INFO      Imports complete.
+2026-04-11 17:25:15,089  INFO      Imports complete.
+2026-04-11 17:26:20,877  INFO      Imports complete.
+2026-04-11 17:27:16,522  INFO      Imports complete.
+2026-04-11 17:27:19,568  INFO      Connected to MongoDB Atlas.
+2026-04-11 17:27:19,926  INFO      Loaded 500 documents from MongoDB.
+2026-04-11 17:27:27,764  INFO      Imports complete.
+2026-04-11 17:27:28,445  INFO      Connected to MongoDB Atlas.
+2026-04-11 17:27:28,793  INFO      Loaded 500 documents from MongoDB.
+2026-04-11 17:27:28,843  INFO      After cleaning: 500 rows.
+2026-04-11 17:27:28,870  INFO      Train: 400  Test: 100
+2026-04-11 17:27:29,048  INFO      TF-IDF vocabulary size: 3062
+2026-04-11 17:28:25,115  INFO      Imports complete.
+2026-04-11 17:28:25,853  INFO      Connected to MongoDB Atlas.
+2026-04-11 17:28:26,150  INFO      Loaded 500 documents from MongoDB.
+2026-04-11 17:28:26,177  INFO      After cleaning: 500 rows.
+2026-04-11 17:28:26,195  INFO      Train: 400  Test: 100
+2026-04-11 17:28:26,282  INFO      TF-IDF vocabulary size: 3062
+2026-04-11 17:30:51,041  INFO      Imports complete.
+2026-04-11 17:30:55,289  INFO      Connected to MongoDB Atlas.
+2026-04-11 17:30:55,593  INFO      Loaded 500 documents from MongoDB.
+2026-04-11 17:31:25,139  INFO      Imports complete.
+2026-04-11 17:31:29,224  INFO      Connected to MongoDB Atlas.
+2026-04-11 17:31:29,519  INFO      Loaded 500 documents from MongoDB.
+2026-04-11 17:34:18,042  INFO      Imports complete.
+2026-04-11 17:34:21,195  INFO      Connected to MongoDB Atlas.
+2026-04-11 17:34:22,113  INFO      Loaded 2000 documents from MongoDB.
+2026-04-11 17:34:26,115  INFO      After cleaning: 2000 rows.
+2026-04-11 17:34:28,875  INFO      Imports complete.
+2026-04-11 17:34:29,486  INFO      Connected to MongoDB Atlas.
+2026-04-11 17:34:30,218  INFO      Loaded 2000 documents from MongoDB.
+2026-04-11 17:34:30,242  INFO      After cleaning: 2000 rows.
+2026-04-11 17:34:30,276  INFO      Train: 1600  Test: 400
+2026-04-11 17:34:30,648  INFO      TF-IDF vocabulary size: 5000
+2026-04-11 17:34:30,841  INFO      Logistic Regression training complete.
+2026-04-11 17:34:30,858  INFO      Accuracy=0.9275  Precision=0.9130  Recall=0.9450  F1=0.9287  AUC=0.9744
+2026-04-11 17:34:31,183  INFO      Saved roc_confusion.png
+2026-04-11 17:34:31,546  INFO      Saved top_features.png

@@ -1,0 +1,87 @@
+2026-04-11 17:18:35,352  INFO      === build_project2_data.py started ===
+2026-04-11 17:18:35,352  INFO      DB=project2  Collection=ai_text_detection  Subset=all  Limit=None
+2026-04-11 17:18:35,352  INFO      Loading HC3 dataset (subset=all) from HuggingFace ...
+2026-04-11 17:18:35,352  ERROR     `trust_remote_code` is not supported anymore.
+Please check that the Hugging Face dataset 'Hello-SimpleAI/HC3' isn't based on a loading script and remove `trust_remote_code`.
+If the dataset is based on a loading script, please ask the dataset author to remove it and convert it to a standard format like Parquet.
+2026-04-11 17:18:35,623  INFO      HTTP Request: HEAD https://huggingface.co/datasets/Hello-SimpleAI/HC3/resolve/main/README.md "HTTP/1.1 307 Temporary Redirect"
+2026-04-11 17:18:35,690  INFO      HTTP Request: HEAD https://huggingface.co/api/resolve-cache/datasets/Hello-SimpleAI/HC3/4d0ff18143b5a7e1b1e79beb540c04549d1e59d3/README.md "HTTP/1.1 200 OK"
+2026-04-11 17:18:35,874  INFO      HTTP Request: GET https://huggingface.co/api/resolve-cache/datasets/Hello-SimpleAI/HC3/4d0ff18143b5a7e1b1e79beb540c04549d1e59d3/README.md "HTTP/1.1 200 OK"
+2026-04-11 17:18:36,022  INFO      HTTP Request: HEAD https://huggingface.co/datasets/Hello-SimpleAI/HC3/resolve/4d0ff18143b5a7e1b1e79beb540c04549d1e59d3/HC3.py "HTTP/1.1 307 Temporary Redirect"
+2026-04-11 17:18:36,081  INFO      HTTP Request: HEAD https://huggingface.co/api/resolve-cache/datasets/Hello-SimpleAI/HC3/4d0ff18143b5a7e1b1e79beb540c04549d1e59d3/HC3.py "HTTP/1.1 200 OK"
+2026-04-11 17:18:36,149  INFO      HTTP Request: GET https://huggingface.co/api/resolve-cache/datasets/Hello-SimpleAI/HC3/4d0ff18143b5a7e1b1e79beb540c04549d1e59d3/HC3.py "HTTP/1.1 200 OK"
+2026-04-11 17:18:36,151  ERROR     Failed to load dataset: Dataset scripts are no longer supported, but found HC3.py
+2026-04-11 17:19:36,175  INFO      === build_project2_data.py started ===
+2026-04-11 17:19:36,175  INFO      DB=project2  Collection=ai_text_detection  Subset=all  Limit=None
+2026-04-11 17:19:36,175  INFO      Loading HC3 dataset (subset=all) from HuggingFace ...
+2026-04-11 17:19:38,046  ERROR     Failed to load dataset: BuilderConfig BuilderConfig(name='all', version=1.1.0, data_dir=None, data_files=None, description='concatenation of all other subsets') doesn't have a 'trust_remote_code' key.
+2026-04-11 17:20:30,094  INFO      === build_project2_data.py started ===
+2026-04-11 17:20:30,094  INFO      DB=project2  Collection=ai_text_detection  Subset=all  Limit=None
+2026-04-11 17:20:30,094  INFO      Loading HC3 dataset (subset=all) from HuggingFace ...
+2026-04-11 17:20:36,420  INFO      Raw HC3 rows: 24322
+2026-04-11 17:20:40,887  INFO      Documents extracted: 85431
+2026-04-11 17:20:40,894  INFO      Label breakdown — human: 58546  ai: 26885
+2026-04-11 17:20:40,894  INFO      Connecting to MongoDB Atlas ...
+2026-04-11 17:20:41,548  INFO      Connected successfully.
+2026-04-11 17:20:41,590  INFO      Inserting 85431 documents into project2.ai_text_detection ...
+2026-04-11 17:23:43,721  INFO      === build_project2_data.py started ===
+2026-04-11 17:23:43,721  INFO      DB=project2  Collection=ai_text_detection  Subset=all  Limit=2000
+2026-04-11 17:23:43,721  INFO      Loading HC3 dataset (subset=all) from HuggingFace ...
+2026-04-11 17:23:44,975  INFO      Raw HC3 rows: 24322
+2026-04-11 17:23:49,816  INFO      Documents extracted: 85431
+2026-04-11 17:23:49,860  INFO      After balanced limit (2000): 2000 documents
+2026-04-11 17:23:49,861  INFO      Label breakdown — human: 1000  ai: 1000
+2026-04-11 17:23:49,862  INFO      Connecting to MongoDB Atlas ...
+2026-04-11 17:23:50,828  INFO      Connected successfully.
+2026-04-11 17:23:50,886  WARNING   Collection already has 41877 docs — dropping before re-insert.
+2026-04-11 17:23:50,995  INFO      Inserting 2000 documents into project2.ai_text_detection ...
+2026-04-11 17:23:51,265  INFO      Inserted 500 documents.
+2026-04-11 17:23:51,267  INFO      === Done. Total inserted: 500 ===
+2026-04-11 17:30:37,678  INFO      === build_project2_data.py started ===
+2026-04-11 17:30:37,678  INFO      DB=project2  Collection=ai_text_detection  Subset=all  Limit=2000
+2026-04-11 17:30:37,678  INFO      Loading HC3 dataset (subset=all) from HuggingFace ...
+2026-04-11 17:30:39,060  INFO      Raw HC3 rows: 24322
+2026-04-11 17:30:43,549  INFO      Documents extracted: 85431
+2026-04-11 17:30:43,590  INFO      After balanced limit (2000): 2000 documents
+2026-04-11 17:30:43,591  INFO      Label breakdown — human: 1000  ai: 1000
+2026-04-11 17:30:43,591  INFO      Connecting to MongoDB Atlas ...
+2026-04-11 17:30:44,283  INFO      Connected successfully.
+2026-04-11 17:30:44,325  WARNING   Collection already has 500 docs — dropping before re-insert.
+2026-04-11 17:30:44,364  INFO      Inserting 2000 documents into project2.ai_text_detection ...
+2026-04-11 17:30:44,754  INFO      Inserted 500 documents.
+2026-04-11 17:30:44,755  INFO      === Done. Total inserted: 500 ===
+2026-04-11 17:31:08,122  INFO      === build_project2_data.py started ===
+2026-04-11 17:31:08,122  INFO      DB=project2  Collection=ai_text_detection  Subset=all  Limit=4000
+2026-04-11 17:31:08,122  INFO      Loading HC3 dataset (subset=all) from HuggingFace ...
+2026-04-11 17:31:09,321  INFO      Raw HC3 rows: 24322
+2026-04-11 17:31:14,053  INFO      Documents extracted: 85431
+2026-04-11 17:31:14,104  INFO      After balanced limit (4000): 4000 documents
+2026-04-11 17:31:14,106  INFO      Label breakdown — human: 2000  ai: 2000
+2026-04-11 17:31:14,106  INFO      Connecting to MongoDB Atlas ...
+2026-04-11 17:31:14,656  INFO      Connected successfully.
+2026-04-11 17:31:14,694  WARNING   Collection already has 500 docs — dropping before re-insert.
+2026-04-11 17:31:14,737  INFO      Inserting 4000 documents into project2.ai_text_detection ...
+2026-04-11 17:31:15,109  INFO      Inserted 500 documents.
+2026-04-11 17:31:15,110  INFO      === Done. Total inserted: 500 ===
+2026-04-11 17:34:02,869  INFO      === build_project2_data.py started ===
+2026-04-11 17:34:02,870  INFO      DB=project2  Collection=ai_text_detection  Subset=all  Limit=2000
+2026-04-11 17:34:02,870  INFO      Loading HC3 dataset (subset=all) from HuggingFace ...
+2026-04-11 17:34:04,120  INFO      Raw HC3 rows: 24322
+2026-04-11 17:34:08,611  INFO      Documents extracted: 85431
+2026-04-11 17:34:08,675  INFO      After balanced limit (2000): 2000 documents
+2026-04-11 17:34:08,676  INFO      Label breakdown — human: 1000  ai: 1000
+2026-04-11 17:34:08,676  INFO      Connecting to MongoDB Atlas ...
+2026-04-11 17:34:09,371  INFO      Connected successfully.
+2026-04-11 17:34:09,412  WARNING   Collection already has 500 docs — dropping before re-insert.
+2026-04-11 17:34:09,455  INFO      Inserting 2000 documents into project2.ai_text_detection ...
+2026-04-11 17:34:09,741  INFO      Inserted 200 documents.
+2026-04-11 17:34:09,858  INFO      Inserted 400 documents.
+2026-04-11 17:34:09,951  INFO      Inserted 600 documents.
+2026-04-11 17:34:10,026  INFO      Inserted 800 documents.
+2026-04-11 17:34:10,183  INFO      Inserted 1000 documents.
+2026-04-11 17:34:10,285  INFO      Inserted 1200 documents.
+2026-04-11 17:34:10,383  INFO      Inserted 1400 documents.
+2026-04-11 17:34:10,485  INFO      Inserted 1600 documents.
+2026-04-11 17:34:10,584  INFO      Inserted 1800 documents.
+2026-04-11 17:34:10,708  INFO      Inserted 2000 documents.
+2026-04-11 17:34:10,709  INFO      === Done. Total inserted: 2000 ===
