@@ -7,7 +7,7 @@ This repository contains all materials for DS 4320 Project 2. The project addres
 |---|---|
 | **Name** | Dailin Li |
 | **NetID** | esd4uq |
-| **DOI** | 10.5281/zenodo.19782022 |
+| **DOI** | [10.5281/zenodo.19782022](https://zenodo.org/account/settings/github/repository/dylanlidailin/DS4320-Project2) |
 | **Press Release** | [press_release.md](press_release.md) |
 | **Pipeline** | [pipeline/project2_pipeline.ipynb](pipeline/project2_pipeline.ipynb) |
 | **License** | MIT — see [LICENSE](LICENSE) |
