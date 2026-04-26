@@ -7,12 +7,10 @@ This repository contains all materials for DS 4320 Project 2. The project addres
 |---|---|
 | **Name** | Dailin Li |
 | **NetID** | esd4uq |
-| **DOI** | *See instructions below — requires manual Zenodo step* |
+| **DOI** | 10.5281/zenodo.19782022 |
 | **Press Release** | [press_release.md](press_release.md) |
 | **Pipeline** | [pipeline/project2_pipeline.ipynb](pipeline/project2_pipeline.ipynb) |
 | **License** | MIT — see [LICENSE](LICENSE) |
-
-> **DOI Instructions:** Push this repository to GitHub, then go to [https://zenodo.org](https://zenodo.org), log in with your GitHub account, enable the repository under "GitHub" → "Sync", and click "Create Release". Zenodo will auto-assign a DOI (format: `10.5281/zenodo.XXXXXXX`). Replace the DOI field above with the generated badge/link.
 
 ---
 
