@@ -7,7 +7,7 @@ This repository contains all materials for DS 4320 Project 2. The project addres
 |---|---|
 | **Name** | Dailin Li |
 | **NetID** | esd4uq |
-| **DOI** | [10.5281/zenodo.19782022](https://zenodo.org/account/settings/github/repository/dylanlidailin/DS4320-Project2) |
+| **DOI** | [10.5281/zenodo.19782022](https://zenodo.org/records/19782022) |
 | **Press Release** | [press_release.md](press_release.md) |
 | **Pipeline** | [pipeline/project2_pipeline.ipynb](pipeline/project2_pipeline.ipynb) |
 | **License** | MIT — see [LICENSE](LICENSE) |
@@ -52,6 +52,8 @@ The general problem of AI-generated content detection spans images, code, audio,
 This project sits at the intersection of natural language processing (NLP), machine learning, and academic policy. The proliferation of generative AI tools has created a novel challenge for educational institutions worldwide: how to maintain standards of original scholarship when students have access to tools that can produce credible academic prose in seconds. The NLP research community has responded with a wave of detection methods ranging from simple statistical classifiers to purpose-built neural detectors (e.g., DetectGPT, GPTZero). However, many of these tools are opaque, expensive to run, and prone to false positives that can wrongly accuse non-native English speakers — whose writing may superficially resemble AI output due to formal register choices. This project takes a classical machine learning approach that prioritizes interpretability: every prediction can be traced back to specific linguistic features, making the system auditable by educators and administrators.
 
 ### Background Reading
+
+OneDrive folder (required separate background-reading collection): [DS4320-Project2 OneDrive](https://myuva-my.sharepoint.com/my?id=%2Fpersonal%2Fesd4uq%5Fvirginia%5Fedu%2FDocuments%2FDS4320%2DProject2&viewid=79c3b001%2Dad86%2D408d%2Da74a%2D92737fc117eb)
 
 | Title | Description | File |
 |---|---|---|
