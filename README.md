@@ -3,14 +3,16 @@
 **Executive Summary:**  
 This repository contains all materials for DS 4320 Project 2. The project addresses the problem of detecting AI-generated academic text using a supervised machine learning approach. A dataset of over 1,000 paired human and ChatGPT responses to academic questions is sourced from the Human ChatGPT Comparison Corpus (HC3) on HuggingFace, stored in a MongoDB Atlas document database, and analyzed using a Logistic Regression classifier trained on TF-IDF features combined with stylometric statistics. The pipeline achieves strong classification performance and produces publication-quality visualizations including an ROC curve, confusion matrix, and top-feature bar charts.
 
-| Field | Value |
-|---|---|
-| **Name** | Dailin Li |
-| **NetID** | esd4uq |
-| **DOI** | [10.5281/zenodo.19782022](https://zenodo.org/records/19782022) |
-| **Press Release** | [press_release.md](press_release.md) |
-| **Pipeline** | [pipeline/project2_pipeline.ipynb](pipeline/project2_pipeline.ipynb) |
-| **License** | MIT — see [LICENSE](LICENSE) |
+
+| Field             | Value                                                                |
+| ----------------- | -------------------------------------------------------------------- |
+| **Name**          | Dailin Li                                                            |
+| **NetID**         | esd4uq                                                               |
+| **DOI**           | [10.5281/zenodo.19782022](https://zenodo.org/records/19782022)       |
+| **Press Release** | [press_release.md](press_release.md)                                 |
+| **Pipeline**      | [pipeline/project2_pipeline.ipynb](pipeline/project2_pipeline.ipynb) |
+| **License**       | MIT — see [LICENSE](LICENSE)                                         |
+
 
 ---
 
@@ -34,18 +36,20 @@ The general problem of AI-generated content detection spans images, code, audio,
 
 ### Terminology
 
-| Term | Definition |
-|---|---|
-| **LLM (Large Language Model)** | A neural network trained on massive text corpora to generate or analyze natural language (e.g., GPT-4, ChatGPT) |
-| **TF-IDF** | Term Frequency–Inverse Document Frequency — a numerical statistic that reflects how characteristic a word is of a document relative to a corpus |
-| **Stylometrics** | The statistical analysis of literary style, including features like sentence length, vocabulary richness, and punctuation patterns |
-| **Perplexity** | A measure of how "surprised" a language model is by a text; AI-generated text tends to have lower perplexity under the generating model |
-| **Hallucination** | When an LLM produces fluent-sounding but factually incorrect or fabricated content |
-| **Binary Classification** | A supervised learning task with exactly two outcome classes (here: human vs. AI) |
-| **ROC-AUC** | Area Under the Receiver Operating Characteristic Curve — a threshold-independent metric for classifier discrimination, where 1.0 is perfect |
-| **Logistic Regression** | A linear probabilistic classifier that models the log-odds of class membership as a linear function of features |
-| **Softmax / Sigmoid** | Activation functions used at the output layer of classifiers to convert raw scores into probabilities |
-| **Academic Integrity** | The ethical code governing original authorship, honest representation of work, and avoidance of plagiarism or fraud in academic contexts |
+
+| Term                           | Definition                                                                                                                                      |
+| ------------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------- |
+| **LLM (Large Language Model)** | A neural network trained on massive text corpora to generate or analyze natural language (e.g., GPT-4, ChatGPT)                                 |
+| **TF-IDF**                     | Term Frequency–Inverse Document Frequency — a numerical statistic that reflects how characteristic a word is of a document relative to a corpus |
+| **Stylometrics**               | The statistical analysis of literary style, including features like sentence length, vocabulary richness, and punctuation patterns              |
+| **Perplexity**                 | A measure of how "surprised" a language model is by a text; AI-generated text tends to have lower perplexity under the generating model         |
+| **Hallucination**              | When an LLM produces fluent-sounding but factually incorrect or fabricated content                                                              |
+| **Binary Classification**      | A supervised learning task with exactly two outcome classes (here: human vs. AI)                                                                |
+| **ROC-AUC**                    | Area Under the Receiver Operating Characteristic Curve — a threshold-independent metric for classifier discrimination, where 1.0 is perfect     |
+| **Logistic Regression**        | A linear probabilistic classifier that models the log-odds of class membership as a linear function of features                                 |
+| **Softmax / Sigmoid**          | Activation functions used at the output layer of classifiers to convert raw scores into probabilities                                           |
+| **Academic Integrity**         | The ethical code governing original authorship, honest representation of work, and avoidance of plagiarism or fraud in academic contexts        |
+
 
 ### Domain Overview
 
@@ -53,15 +57,17 @@ This project sits at the intersection of natural language processing (NLP), mach
 
 ### Background Reading
 
-OneDrive folder (required separate background-reading collection): [DS4320-Project2 OneDrive](https://myuva-my.sharepoint.com/my?id=%2Fpersonal%2Fesd4uq%5Fvirginia%5Fedu%2FDocuments%2FDS4320%2DProject2&viewid=79c3b001%2Dad86%2D408d%2Da74a%2D92737fc117eb)
+OneDrive folder: [DS4320-Project2 OneDrive](https://myuva-my.sharepoint.com/:f:/g/personal/esd4uq_virginia_edu/IgDO2_mSr10zQKDJKXzpV6zIAfdndYOf4CgX8ToOuWsask0?e=bX793m)
 
-| Title | Description | File |
-|---|---|---|
-| HC3: How Close is ChatGPT to Human Experts? | Introduces the HC3 dataset and benchmarks ChatGPT vs. domain experts across five academic fields | [Background_reading/hc3_paper.pdf](Background_reading/hc3_paper.pdf) |
-| DetectGPT: Zero-Shot Machine-Generated Text Detection Using Probability Curvature | Proposes a zero-shot method using log-probability curvature to detect LLM-generated text | [Background_reading/detectgpt.pdf](Background_reading/detectgpt.pdf) |
-| The RAID Benchmark: A Large-Scale Dataset for AI-Generated Text Detection | Comprehensive multi-model, multi-domain benchmark for evaluating AI text detectors | [Background_reading/raid_benchmark.pdf](Background_reading/raid_benchmark.pdf) |
-| Stylometric Methods for Authorship Attribution | Survey of classical stylometric features (sentence length, function words, POS distributions) used in authorship analysis | [Background_reading/stylometrics_survey.pdf](Background_reading/stylometrics_survey.pdf) |
-| GPT Detectors Are Biased Against Non-Native English Writers | Empirical study showing commercial AI detectors disproportionately flag text by non-native English speakers | [Background_reading/detector_bias.pdf](Background_reading/detector_bias.pdf) |
+
+| Title                                                                             | Description                                                                                                               | File                                                                                     |
+| --------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------- |
+| HC3: How Close is ChatGPT to Human Experts?                                       | Introduces the HC3 dataset and benchmarks ChatGPT vs. domain experts across five academic fields                          | [Background_reading/hc3_paper.pdf](Background_reading/hc3_paper.pdf)                     |
+| DetectGPT: Zero-Shot Machine-Generated Text Detection Using Probability Curvature | Proposes a zero-shot method using log-probability curvature to detect LLM-generated text                                  | [Background_reading/detectgpt.pdf](Background_reading/detectgpt.pdf)                     |
+| The RAID Benchmark: A Large-Scale Dataset for AI-Generated Text Detection         | Comprehensive multi-model, multi-domain benchmark for evaluating AI text detectors                                        | [Background_reading/raid_benchmark.pdf](Background_reading/raid_benchmark.pdf)           |
+| Stylometric Methods for Authorship Attribution                                    | Survey of classical stylometric features (sentence length, function words, POS distributions) used in authorship analysis | [Background_reading/stylometrics_survey.pdf](Background_reading/stylometrics_survey.pdf) |
+| GPT Detectors Are Biased Against Non-Native English Writers                       | Empirical study showing commercial AI detectors disproportionately flag text by non-native English speakers               | [Background_reading/detector_bias.pdf](Background_reading/detector_bias.pdf)             |
+
 
 ---
 
@@ -73,12 +79,15 @@ The raw data comes from the **Human ChatGPT Comparison Corpus (HC3)**, published
 
 ### Code
 
-| File | Description | Link |
-|---|---|---|
-| `data/build_project2_data.py` | Fetches HC3 from HuggingFace, computes per-document features, and inserts all documents into MongoDB Atlas with logging | [data/build_project2_data.py](data/build_project2_data.py) |
+
+| File                               | Description                                                                                                             | Link                                                                 |
+| ---------------------------------- | ----------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------- |
+| `data/build_project2_data.py`      | Fetches HC3 from HuggingFace, computes per-document features, and inserts all documents into MongoDB Atlas with logging | [data/build_project2_data.py](data/build_project2_data.py)           |
 | `pipeline/project2_pipeline.ipynb` | Queries MongoDB, engineers TF-IDF + statistical features, trains Logistic Regression, evaluates, and visualizes results | [pipeline/project2_pipeline.ipynb](pipeline/project2_pipeline.ipynb) |
 
+
 **To run the data ingestion script:**
+
 ```bash
 pip install datasets pymongo
 python data/build_project2_data.py \
@@ -132,26 +141,31 @@ Each document in the `project2.ai_text_detection` MongoDB collection follows thi
 
 ### Data Summary
 
-| Metric | Value |
-|---|---|
-| Total documents (target) | ≥ 1,000 (full HC3 ≈ 37,000+) |
-| Human-labeled documents | ~50% |
-| AI-labeled documents | ~50% |
-| Domains covered | open\_qa, finance, medicine, law, psychology, wiki\_csai, general |
-| Language | English |
-| Source dataset | Hello-SimpleAI/HC3 (HuggingFace) |
-| Storage | MongoDB Atlas, database `project2`, collection `ai_text_detection` |
+
+| Metric                   | Value                                                              |
+| ------------------------ | ------------------------------------------------------------------ |
+| Total documents (target) | ≥ 1,000 (full HC3 ≈ 37,000+)                                       |
+| Human-labeled documents  | ~50%                                                               |
+| AI-labeled documents     | ~50%                                                               |
+| Domains covered          | openqa, finance, medicine, law, psychology, wikicsai, general      |
+| Language                 | English                                                            |
+| Source dataset           | Hello-SimpleAI/HC3 (HuggingFace)                                   |
+| Storage                  | MongoDB Atlas, database `project2`, collection `ai_text_detection` |
+
 
 ### Data Dictionary
 
-| Feature | Type | Description | Example | Uncertainty |
-|---|---|---|---|---|
-| `text` | String | Full text of the answer | "Insulin resistance is a condition in which..." | Low — direct copy from source; occasional encoding artifacts in special characters |
-| `label` | String | Ground-truth authorship class | `"human"` or `"ai"` | Low for AI class (deterministically generated); moderate for human class (forum posts may contain AI-assisted writing post-2022) |
-| `source` | String | HC3 domain subset identifier | `"HC3-all"` | None — programmatically assigned at ingest |
-| `question` | String | Original question that prompted the answer | "What causes type 2 diabetes?" | Low — copied from source; may be empty for some HC3 rows |
-| `word_count` | Integer | Number of whitespace-delimited tokens in `text` | `142` | ±1–2 tokens due to hyphenation and contraction handling edge cases |
-| `avg_word_length` | Float | Mean character count per word after stripping punctuation | `4.7` | ±0.05 due to punctuation-stripping heuristic at word boundaries |
-| `sentence_count` | Integer | Number of sentences determined by splitting on `.`, `!`, `?` | `8` | ±1–3 sentences for texts with abbreviations (e.g., "Dr. Smith said...") or bullet-point formatting |
-| `punctuation_density` | Float ∈ [0,1] | Proportion of characters in `text` that are punctuation marks | `0.0312` | ±0.002 due to Unicode punctuation variants not covered by Python's `string.punctuation` |
-| `ingested_at` | ISODate | UTC timestamp of MongoDB insertion | `2026-04-11T14:32:00Z` | None — system clock at ingest time |
+
+| Feature               | Type          | Description                                                   | Example                                         | Uncertainty                                                                                                                      |
+| --------------------- | ------------- | ------------------------------------------------------------- | ----------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------- |
+| `text`                | String        | Full text of the answer                                       | "Insulin resistance is a condition in which..." | Low — direct copy from source; occasional encoding artifacts in special characters                                               |
+| `label`               | String        | Ground-truth authorship class                                 | `"human"` or `"ai"`                             | Low for AI class (deterministically generated); moderate for human class (forum posts may contain AI-assisted writing post-2022) |
+| `source`              | String        | HC3 domain subset identifier                                  | `"HC3-all"`                                     | None — programmatically assigned at ingest                                                                                       |
+| `question`            | String        | Original question that prompted the answer                    | "What causes type 2 diabetes?"                  | Low — copied from source; may be empty for some HC3 rows                                                                         |
+| `word_count`          | Integer       | Number of whitespace-delimited tokens in `text`               | `142`                                           | ±1–2 tokens due to hyphenation and contraction handling edge cases                                                               |
+| `avg_word_length`     | Float         | Mean character count per word after stripping punctuation     | `4.7`                                           | ±0.05 due to punctuation-stripping heuristic at word boundaries                                                                  |
+| `sentence_count`      | Integer       | Number of sentences determined by splitting on `.`, `!`, `?`  | `8`                                             | ±1–3 sentences for texts with abbreviations (e.g., "Dr. Smith said...") or bullet-point formatting                               |
+| `punctuation_density` | Float ∈ [0,1] | Proportion of characters in `text` that are punctuation marks | `0.0312`                                        | ±0.002 due to Unicode punctuation variants not covered by Python's `string.punctuation`                                          |
+| `ingested_at`         | ISODate       | UTC timestamp of MongoDB insertion                            | `2026-04-11T14:32:00Z`                          | None — system clock at ingest time                                                                                               |
+
+
